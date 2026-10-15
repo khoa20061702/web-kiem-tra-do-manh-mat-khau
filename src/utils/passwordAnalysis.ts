@@ -185,9 +185,9 @@ export function analyzePassword(password: string): PasswordAnalysisResult {
       score: 0,
       level: 'empty',
       levelLabel: 'Chưa nhập mật khẩu',
-      color: '#94a3b8', // slate-400
-      badgeBg: 'bg-slate-800 text-slate-300 border-slate-700',
-      borderColor: 'border-slate-700',
+      color: '#a1a1aa',
+      badgeBg: 'bg-neutral-800 text-neutral-300 border-neutral-700',
+      borderColor: 'border-neutral-700',
       criteria: [
         { id: 'length', label: 'Độ dài tối thiểu 12 ký tự', description: 'Mật khẩu cần đủ dài để chống tấn công vét cạn', passed: false },
         { id: 'lowercase', label: 'Chứa chữ cái thường (a-z)', description: 'Tăng kích thước không gian tìm kiếm ký tự', passed: false },
@@ -344,34 +344,34 @@ export function analyzePassword(password: string): PasswordAnalysisResult {
   // Phân loại cấp độ
   let level: StrengthLevel = 'very_weak';
   let levelLabel = 'Rất yếu';
-  let color = '#ef4444'; // Đỏ
-  let badgeBg = 'bg-rose-500/10 text-rose-400 border-rose-500/30';
-  let borderColor = 'border-rose-500/50';
+  let color = '#a1a1aa';
+  let badgeBg = 'bg-neutral-900 text-neutral-300 border-neutral-700';
+  let borderColor = 'border-neutral-700';
 
   if (score >= 85) {
     level = 'very_strong';
     levelLabel = 'Rất mạnh';
-    color = '#10b981'; // Xanh lá
-    badgeBg = 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30';
-    borderColor = 'border-emerald-500/50';
+    color = '#ffffff';
+    badgeBg = 'bg-white text-black border-white';
+    borderColor = 'border-white';
   } else if (score >= 70) {
     level = 'strong';
     levelLabel = 'Mạnh';
-    color = '#06b6d4'; // Xanh cyan
-    badgeBg = 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30';
-    borderColor = 'border-cyan-500/50';
+    color = '#e5e5e5';
+    badgeBg = 'bg-neutral-800 text-neutral-100 border-neutral-600';
+    borderColor = 'border-neutral-600';
   } else if (score >= 50) {
     level = 'medium';
     levelLabel = 'Trung bình';
-    color = '#eab308'; // Vàng/cam
-    badgeBg = 'bg-amber-500/10 text-amber-400 border-amber-500/30';
-    borderColor = 'border-amber-500/50';
+    color = '#d4d4d4';
+    badgeBg = 'bg-neutral-800 text-neutral-200 border-neutral-700';
+    borderColor = 'border-neutral-700';
   } else if (score >= 25) {
     level = 'weak';
     levelLabel = 'Yếu';
-    color = '#f97316'; // Cam
-    badgeBg = 'bg-orange-500/10 text-orange-400 border-orange-500/30';
-    borderColor = 'border-orange-500/50';
+    color = '#a3a3a3';
+    badgeBg = 'bg-neutral-900 text-neutral-400 border-neutral-800';
+    borderColor = 'border-neutral-800';
   }
 
   // Tính thời gian bẻ khóa (minh họa lý thuyết):

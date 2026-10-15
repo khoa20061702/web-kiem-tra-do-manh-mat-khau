@@ -34,7 +34,7 @@ export const SecurityKnowledge: React.FC = () => {
       id: 'brute-force',
       badge: 'Hình thức tấn công',
       title: '1. Tấn công dò mật khẩu (Brute Force & Dictionary Attack)',
-      icon: <Cpu className="w-5 h-5 text-rose-600 dark:text-rose-400" />,
+      icon: <Cpu className="w-5 h-5 text-black dark:text-white" />,
       summary:
         'Tấn công vét cạn (Brute Force) là phương pháp thử tất cả các tổ hợp ký tự có thể xảy ra cho đến khi tìm được mật khẩu chính xác. Tấn công từ điển (Dictionary Attack) tối ưu hơn bằng cách thử hàng triệu mật khẩu phổ biến đã biết trước.',
       deepDive: {
@@ -50,7 +50,7 @@ export const SecurityKnowledge: React.FC = () => {
       id: 'password-security',
       badge: 'Nguyên tắc bảo vệ',
       title: '2. Nguyên tắc bảo mật mật khẩu & Cụm mật khẩu (Passphrase)',
-      icon: <Key className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Key className="w-5 h-5 text-black dark:text-white" />,
       summary:
         'Vì sao nên sử dụng mật khẩu dài, khó đoán và độc nhất cho từng tài khoản? Rủi ro lớn nhất trong thực tế không phải là mật khẩu bị bẻ khóa trực tiếp, mà là việc tái sử dụng một mật khẩu trên nhiều nền tảng.',
       deepDive: {
@@ -66,7 +66,7 @@ export const SecurityKnowledge: React.FC = () => {
       id: 'phishing',
       badge: 'Tấn công lừa đảo',
       title: '3. Tấn công giả mạo (Phishing & Social Engineering)',
-      icon: <AlertOctagon className="w-5 h-5 text-amber-600 dark:text-amber-400" />,
+      icon: <AlertOctagon className="w-5 h-5 text-black dark:text-white" />,
       summary:
         'Dù mật khẩu của bạn có mạnh đến đâu, nó cũng trở nên vô dụng nếu bạn tự tay nhập nó vào một website giả mạo do kẻ tấn công thiết kế.',
       deepDive: {
@@ -82,7 +82,7 @@ export const SecurityKnowledge: React.FC = () => {
       id: 'two-factor-auth',
       badge: 'Lớp bảo vệ nâng cao',
       title: '4. Xác thực hai yếu tố (Two-Factor Authentication - 2FA)',
-      icon: <Smartphone className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />,
+      icon: <Smartphone className="w-5 h-5 text-black dark:text-white" />,
       summary:
         'Xác thực 2 yếu tố (2FA / MFA) bổ sung một lớp bảo vệ thứ hai ngoài mật khẩu. Ngay cả khi kẻ tấn công biết được mật khẩu của bạn, chúng vẫn không thể đăng nhập thành công.',
       deepDive: {
@@ -98,18 +98,18 @@ export const SecurityKnowledge: React.FC = () => {
 
   return (
     <section id="knowledge" className="py-4 scroll-mt-20">
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 sm:p-8 shadow-sm transition-colors">
+      <div className="bg-white dark:bg-black border border-neutral-200 dark:border-neutral-800 rounded-3xl p-5 sm:p-8 shadow-xs transition-colors">
         <div className="max-w-3xl mb-6">
           <div className="flex items-center gap-2 mb-1.5">
-            <BookOpen className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            <BookOpen className="w-4 h-4 text-black dark:text-white" />
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
               Tài liệu học tập
             </span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white tracking-tight">
             Kiến thức an toàn thông tin & bảo mật mật khẩu
           </h2>
-          <p className="text-sm text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+          <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed">
             Nội dung tổng hợp cốt lõi dành cho sinh viên đại học môn An toàn thông tin, giải thích các cơ chế toán học, kỹ thuật tấn công và biện pháp phòng ngừa chuẩn công nghiệp.
           </p>
         </div>
@@ -121,65 +121,65 @@ export const SecurityKnowledge: React.FC = () => {
             return (
               <div
                 key={topic.id}
-                className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/60 overflow-hidden transition-colors"
+                className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-950/60 overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => setExpandedId(isExpanded ? null : topic.id)}
-                  className="w-full p-4 sm:p-5 text-left flex items-start justify-between gap-4 hover:bg-slate-100/60 dark:hover:bg-slate-900/60 transition-colors"
+                  className="w-full p-4 sm:p-5 text-left flex items-start justify-between gap-4 hover:bg-neutral-100/60 dark:hover:bg-neutral-900/60 transition-colors"
                 >
                   <div className="flex items-start gap-3.5">
-                    <div className="p-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shrink-0 mt-0.5">
+                    <div className="p-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shrink-0 mt-0.5 text-black dark:text-white">
                       {topic.icon}
                     </div>
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">
+                        <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-neutral-200/80 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 border border-neutral-300 dark:border-neutral-700">
                           {topic.badge}
                         </span>
                       </div>
-                      <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100">
+                      <h3 className="text-sm sm:text-base font-bold text-black dark:text-white">
                         {topic.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                      <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed">
                         {topic.summary}
                       </p>
                     </div>
                   </div>
 
-                  <div className="p-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 shrink-0 mt-1">
+                  <div className="p-1 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 shrink-0 mt-1">
                     {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                   </div>
                 </button>
 
                 {isExpanded && (
-                  <div className="px-5 pb-5 pt-2 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs sm:text-sm space-y-3">
-                    <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                      <div className="flex items-center gap-2 font-semibold text-rose-700 dark:text-rose-400 mb-1 text-xs">
-                        <Zap className="w-4 h-4 text-rose-600 dark:text-rose-400" />
+                  <div className="px-5 pb-5 pt-2 border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 text-xs sm:text-sm space-y-3">
+                    <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                      <div className="flex items-center gap-2 font-bold text-black dark:text-white mb-1 text-xs">
+                        <Zap className="w-4 h-4 text-black dark:text-white" />
                         <span>Cơ chế tấn công kỹ thuật:</span>
                       </div>
-                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
+                      <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-xs">
                         {topic.deepDive.mechanism}
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                      <div className="flex items-center gap-2 font-semibold text-emerald-700 dark:text-emerald-400 mb-1 text-xs">
-                        <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                    <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                      <div className="flex items-center gap-2 font-bold text-black dark:text-white mb-1 text-xs">
+                        <ShieldCheck className="w-4 h-4 text-black dark:text-white" />
                         <span>Chiến lược phòng ngự khuyến nghị:</span>
                       </div>
-                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
+                      <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-xs">
                         {topic.deepDive.defense}
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                      <div className="flex items-center gap-2 font-semibold text-blue-700 dark:text-blue-400 mb-1 text-xs">
-                        <Layers className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                      <div className="flex items-center gap-2 font-bold text-black dark:text-white mb-1 text-xs">
+                        <Layers className="w-4 h-4 text-black dark:text-white" />
                         <span>Góc nhìn học thuật & Chuẩn an toàn (RFC / NIST):</span>
                       </div>
-                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
+                      <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-xs">
                         {topic.deepDive.academicTip}
                       </p>
                     </div>
@@ -191,20 +191,20 @@ export const SecurityKnowledge: React.FC = () => {
         </div>
 
         {/* Bảng so sánh lý thuyết thời gian bẻ khóa */}
-        <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800">
+        <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-800">
           <div className="flex items-center gap-2 mb-2">
-            <Lock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200">
+            <Lock className="w-4 h-4 text-black dark:text-white" />
+            <h3 className="text-sm font-bold uppercase tracking-wider text-black dark:text-white">
               Bảng tra cứu độ phức tạp mật mã học (Minh họa thực nghiệm)
             </h3>
           </div>
-          <p className="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">
+          <p className="text-xs text-neutral-600 dark:text-neutral-400 mb-3 leading-relaxed">
             Ước lượng thời gian cần thiết để giải mã toàn bộ không gian tìm kiếm với hệ thống GPU hiện đại đạt tốc độ ~10 tỷ hash/giây:
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+          <div className="overflow-x-auto rounded-xl border border-neutral-200 dark:border-neutral-800">
             <table className="w-full text-left text-xs border-collapse">
-              <thead className="bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-slate-800">
+              <thead className="bg-neutral-100 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200 font-semibold border-b border-neutral-200 dark:border-neutral-800">
                 <tr>
                   <th className="p-3">Ví dụ mật khẩu</th>
                   <th className="p-3">Độ dài & Nhóm ký tự</th>
@@ -213,41 +213,61 @@ export const SecurityKnowledge: React.FC = () => {
                   <th className="p-3">Kết luận học thuật</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 dark:divide-slate-800 bg-white dark:bg-slate-950/40 text-slate-700 dark:text-slate-300">
-                <tr className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                  <td className="p-3 font-mono font-bold text-rose-600 dark:text-rose-400">123456</td>
+              <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800 bg-white dark:bg-neutral-950/40 text-neutral-800 dark:text-neutral-200">
+                <tr className="hover:bg-neutral-50 dark:hover:bg-neutral-900/40">
+                  <td className="p-3 font-mono font-bold text-black dark:text-white">123456</td>
                   <td className="p-3">6 ký tự (Chỉ số)</td>
                   <td className="p-3 font-mono">&lt; 20 bits</td>
-                  <td className="p-3 font-bold text-rose-600 dark:text-rose-400">&lt; 1 mili-giây</td>
-                  <td className="p-3 text-rose-600 dark:text-rose-400 text-[11px]">Bị dò ra ngay trong từ điển</td>
+                  <td className="p-3 font-bold text-black dark:text-white">&lt; 1 mili-giây</td>
+                  <td className="p-3">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">
+                      Bị dò ra ngay trong từ điển
+                    </span>
+                  </td>
                 </tr>
-                <tr className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                  <td className="p-3 font-mono font-bold text-rose-600 dark:text-rose-400">matkhau123</td>
+                <tr className="hover:bg-neutral-50 dark:hover:bg-neutral-900/40">
+                  <td className="p-3 font-mono font-bold text-black dark:text-white">matkhau123</td>
                   <td className="p-3">10 ký tự (Chữ thường + số)</td>
                   <td className="p-3 font-mono">~25 bits</td>
-                  <td className="p-3 font-bold text-rose-600 dark:text-rose-400">Vài giây</td>
-                  <td className="p-3 text-rose-600 dark:text-rose-400 text-[11px]">Dễ đoán, nằm trong từ điển Việt</td>
+                  <td className="p-3 font-bold text-black dark:text-white">Vài giây</td>
+                  <td className="p-3">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">
+                      Dễ đoán, nằm trong từ điển Việt
+                    </span>
+                  </td>
                 </tr>
-                <tr className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">P@ssw0rd!</td>
+                <tr className="hover:bg-neutral-50 dark:hover:bg-neutral-900/40">
+                  <td className="p-3 font-mono font-bold text-black dark:text-white">P@ssw0rd!</td>
                   <td className="p-3">9 ký tự (Đủ 4 nhóm)</td>
                   <td className="p-3 font-mono">~45 bits</td>
-                  <td className="p-3 font-bold text-amber-600 dark:text-amber-400">Vài giờ</td>
-                  <td className="p-3 text-amber-600 dark:text-amber-400 text-[11px]">Ngụy trang Leetspeak phổ biến</td>
+                  <td className="p-3 font-bold text-black dark:text-white">Vài giờ</td>
+                  <td className="p-3">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">
+                      Ngụy trang Leetspeak phổ biến
+                    </span>
+                  </td>
                 </tr>
-                <tr className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                  <td className="p-3 font-mono font-bold text-blue-600 dark:text-blue-400">K#9x!mP2@wL8$qR</td>
+                <tr className="hover:bg-neutral-50 dark:hover:bg-neutral-900/40">
+                  <td className="p-3 font-mono font-bold text-black dark:text-white">K#9x!mP2@wL8$qR</td>
                   <td className="p-3">15 ký tự (Ngẫu nhiên 4 nhóm)</td>
                   <td className="p-3 font-mono">&gt; 90 bits</td>
-                  <td className="p-3 font-bold text-emerald-600 dark:text-emerald-400">Hàng triệu năm</td>
-                  <td className="p-3 text-emerald-600 dark:text-emerald-400 text-[11px]">Không thể bẻ khóa vét cạn</td>
+                  <td className="p-3 font-bold text-black dark:text-white">Hàng triệu năm</td>
+                  <td className="p-3">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-black text-white dark:bg-white dark:text-black border border-black dark:border-white">
+                      Không thể bẻ khóa vét cạn
+                    </span>
+                  </td>
                 </tr>
-                <tr className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                  <td className="p-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">Nui-Song-May-Troi#88</td>
+                <tr className="hover:bg-neutral-50 dark:hover:bg-neutral-900/40">
+                  <td className="p-3 font-mono font-bold text-black dark:text-white">Nui-Song-May-Troi#88</td>
                   <td className="p-3">20 ký tự (Cụm từ Diceware)</td>
                   <td className="p-3 font-mono">&gt; 80 bits</td>
-                  <td className="p-3 font-bold text-emerald-600 dark:text-emerald-400">Hàng triệu năm</td>
-                  <td className="p-3 text-emerald-600 dark:text-emerald-400 text-[11px]">Cực kỳ an toàn & Rất dễ nhớ</td>
+                  <td className="p-3 font-bold text-black dark:text-white">Hàng triệu năm</td>
+                  <td className="p-3">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-black text-white dark:bg-white dark:text-black border border-black dark:border-white">
+                      Cực kỳ an toàn & Rất dễ nhớ
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>
