@@ -1,0 +1,6 @@
+{
+  "name": "Password Security Checker",
+  "description": "Kiểm tra độ mạnh mật khẩu – Học cách bảo vệ tài khoản của bạn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
